@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PANK EDUCATION</title>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1780801099911253');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1780801099911253&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+}
+
+body{
+background:#140010;
+display:flex;
+justify-content:center;
+overflow-x:hidden;
+}
+
+.wrapper{
+width:420px;
+min-height:100vh;
+padding:25px 18px;
+text-align:center;
+color:white;
+position:relative;
+background:linear-gradient(180deg,#140010,#2a001f,#140010);
+overflow:hidden;
+}
+
+/* ✨ Animated Grid + Fade */
+.wrapper::before{
+content:"";
+position:absolute;
+inset:0;
+background-image:
+linear-gradient(rgba(255,105,180,0.08) 1px, transparent 1px),
+linear-gradient(90deg, rgba(255,105,180,0.08) 1px, transparent 1px);
+background-size:60px 60px;
+animation:gridMove 20s linear infinite;
+
+/* Fade */
+mask-image:linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.2), transparent);
+-webkit-mask-image:linear-gradient(to bottom, rgba(0,0,0,0.9), rgba(0,0,0,0.2), transparent);
+
+z-index:0;
+}
+
+@keyframes gridMove{
+0%{transform:translateY(0);}
+100%{transform:translateY(60px);}
+}
+
+/* Glow */
+.wrapper::after{
+content:"";
+position:absolute;
+width:260px;
+height:260px;
+background:#ff4fd8;
+filter:blur(140px);
+opacity:0.12;
+top:40px;
+left:50%;
+transform:translateX(-50%);
+z-index:0;
+}
+
+.content{
+position:relative;
+z-index:2;
+}
+
+/* Profile */
+.profile{
+width:120px;
+height:120px;
+padding:6px;
+border-radius:28px;
+margin:auto;
+background:linear-gradient(135deg,#ff4fd8,#ff8cf0);
+box-shadow:0 0 25px rgba(255,79,216,0.4);
+margin-bottom:18px;
+}
+
+.profile img{
+width:100%;
+height:100%;
+border-radius:22px;
+object-fit:cover;
+}
+
+h1{
+font-size:42px;
+letter-spacing:5px;
+font-weight:700;
+margin-bottom:8px;
+}
+
+.subtitle{
+font-size:22px;
+font-weight:600;
+color:#ff4fd8;
+margin-bottom:6px;
+}
+
+.subtext{
+font-size:14px;
+color:#d6d6d6;
+margin-bottom:30px;
+}
+
+/* 💎 Glass Cards */
+.features{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:14px;
+margin-bottom:30px;
+}
+
+.box{
+background:rgba(255,255,255,0.05);
+padding:18px 10px;
+border-radius:22px;
+backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
+border:1px solid rgba(255,255,255,0.08);
+box-shadow:
+0 8px 20px rgba(0,0,0,0.25),
+inset 0 0 15px rgba(255,255,255,0.05);
+transition:0.3s;
+}
+
+.box:hover{
+transform:translateY(-5px) scale(1.02);
+box-shadow:
+0 12px 30px rgba(0,0,0,0.3),
+inset 0 0 20px rgba(255,255,255,0.08);
+}
+
+.box h3{
+font-size:15px;
+color:#ff4fd8;
+margin-bottom:6px;
+}
+
+.box p{
+font-size:12px;
+color:#e0e0e0;
+}
+
+/* Button */
+.join-btn{
+display:flex;
+align-items:center;
+justify-content:center;
+gap:12px;
+text-decoration:none;
+padding:18px;
+border-radius:50px;
+font-size:22px;
+font-weight:600;
+color:white;
+margin:25px 0;
+background:linear-gradient(90deg,#ff4fd8,#ff8cf0);
+box-shadow:0 0 20px rgba(255,79,216,0.5);
+animation:pulse 2s infinite;
+}
+
+.join-btn img{
+width:28px;
+height:28px;
+}
+
+@keyframes pulse{
+0%{transform:scale(1);}
+50%{transform:scale(1.04);}
+100%{transform:scale(1);}
+}
+
+/* Footer Upgrade */
+.footer{
+margin-top:20px;
+}
+
+.footer .info{
+font-size:13px;
+color:#cfcfcf;
+margin-top:10px;
+line-height:1.6;
+}
+
+.footer .contact{
+margin-top:18px;
+font-size:13px;
+}
+
+.footer .contact span{
+color:#ff8cf0;
+}
+
+.footer .timing{
+margin-top:18px;
+font-size:12px;
+color:#aaa;
+}
+
+.footer .brand{
+margin-top:22px;
+font-size:14px;
+}
+
+.footer .brand span{
+color:#ff4fd8;
+font-weight:600;
+}
+
+.disclaimer{
+font-size:11px;
+color:#cfcfcf;
+line-height:1.6;
+margin-top:12px;
+padding:0 8px;
+}
+
+/* Floating Button */
+.telegram-float{
+position:fixed;
+bottom:20px;
+right:20px;
+width:70px;
+height:70px;
+border-radius:50%;
+background:linear-gradient(135deg,#ff4fd8,#ff8cf0);
+display:flex;
+align-items:center;
+justify-content:center;
+box-shadow:0 0 20px rgba(255,79,216,0.5);
+animation:floatBtn 2s infinite alternate;
+z-index:999;
+}
+
+.telegram-float img{
+width:34px;
+height:34px;
+}
+
+@keyframes floatBtn{
+from{transform:scale(1);}
+to{transform:scale(1.08);}
+}
+</style>
+</head>
+
+<body>
+
+<div class="wrapper">
+<div class="content">
+
+<div class="profile">
+<img src="munaaf.jpg">
+</div>
+
+<h1>PANKAJ BHARDWAJ</h1>
+<div class="subtitle">Premium Trading Community 🚀</div>
+<div class="subtext">Serious traders only • High accuracy insights</div>
+
+<div class="features">
+<div class="box">
+<h3>📊 Market Insights</h3>
+<p>Clear trend direction</p>
+</div>
+
+<div class="box">
+<h3>🎓 Education</h3>
+<p>Step-by-step training</p>
+</div>
+
+<div class="box">
+<h3>💎 Premium Setup</h3>
+<p>High probability trades</p>
+</div>
+
+<div class="box">
+<h3>📈 Consistency</h3>
+<p>Long-term growth</p>
+</div>
+</div>
+
+<a href="https://t.me/+SZ7Z3DR0uh0wOGY1" class="join-btn">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">
+Join Telegram Now
+</a>
+
+<!-- 🔥 Upgraded Footer -->
+<div class="footer">
+
+<div class="info">
+📍 Trusted by serious traders across India <br>
+⚡ Real-time insights & disciplined strategies <br>
+🔐 Private & focused trading environment
+</div>
+
+Managed by <span>Anna Group</span>
+</div>
+
+<div class="disclaimer">
+Disclaimer: This platform is for educational purposes only. We do not provide financial advice. Trading involves risk. Please consult your financial advisor. Past performance does not guarantee future results.
+</div>
+
+</div>
+
+</div>
+</div>
+
+<a href="https://t.me/+SZ7Z3DR0uh0wOGY1" class="telegram-float">
+<img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg">
+</a>
+
+</body>
+</html>
